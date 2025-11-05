@@ -8,10 +8,10 @@ typedef struct {
 } Territorio;
 
 int main() {
-    Territorio territorios[2]; // vetor com 3 territórios
+    Territorio territorios[5]; // vetor com 3 territórios
 
     // Preenchendo os dados
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < 5; i++) {
         
         printf("---Território---\n");
 
@@ -27,7 +27,7 @@ int main() {
 
     // Exibindo os dados
     printf("\n=== Lista de Territórios ===\n");
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < 5; i++) {
         printf("Território %d:\n", i + 1);
         printf("Nome: %s\n", territorios[i].nome);
         printf("Cor: %s\n", territorios[i].cor);
