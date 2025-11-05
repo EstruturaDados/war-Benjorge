@@ -8,26 +8,25 @@ typedef struct {
 } Territorio;
 
 int main() {
-    Territorio territorios[2]; // vetor com 3 territórios
+    Territorio territorios[3]; // vetor com 3 territórios
 
     // Preenchendo os dados
-    for (int i = 0; i < 2; i++) {
-        
-        printf("---Território---\n");
+    for (int i = 0; i < 3; i++) {
+        printf("\n--- Território %d ---\n", i + 1);
 
-        printf("Digite o nome do território %d: ", i + 1);
+        printf("Digite o nome do território: ");
         scanf("%s", territorios[i].nome);
 
-        printf("Digite a cor do território %d: ", i + 1);
+        printf("Digite a cor do território: ");
         scanf("%s", territorios[i].cor);
 
-        printf("Digite a quantidade de tropas do território %d: ", i + 1);
+        printf("Digite a quantidade de tropas: ");
         scanf("%d", &territorios[i].tropas);
     }
 
     // Exibindo os dados
     printf("\n=== Lista de Territórios ===\n");
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < 3; i++) {
         printf("Território %d:\n", i + 1);
         printf("Nome: %s\n", territorios[i].nome);
         printf("Cor: %s\n", territorios[i].cor);
@@ -35,4 +34,4 @@ int main() {
     }
 
     return 0;
-};
+}
